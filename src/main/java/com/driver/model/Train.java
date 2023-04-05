@@ -22,6 +22,7 @@ public class Train {
 
     private String route;
 
+
     //Mapping with tickets Entity : parent Entity
     @OneToMany(mappedBy = "train", cascade = CascadeType.ALL)
     private List<Ticket> bookedTickets = new ArrayList<>();
